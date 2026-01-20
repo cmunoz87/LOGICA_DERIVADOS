@@ -17,27 +17,28 @@ EXAMENES = ["Glucosa", "GGT", "Troponina", "Progesterona", "LH"]
 
 RULES = {
     "Villarrica": {
-        "Glucosa": {"tubo": "tubo amarillo gel 1", "proceso": "NO DEFINIDO"},
-        "GGT": {"tubo": "tubo amarillo gel 1", "proceso": "NO DEFINIDO"},
-        "Troponina": {"tubo": "tubo amarillo gel 1", "proceso": "NO DEFINIDO"},
-        "Progesterona": {"tubo": "tubo amarillo gel 2", "proceso": "NO DEFINIDO"},
-        "LH": {"tubo": "tubo amarillo gel 1", "proceso": "NO DEFINIDO"},
+        "Glucosa": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
+        "GGT": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
+        "Troponina": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
+        "Progesterona": {"tubo": "tubo amarillo gel 2", "proceso": "DERIVA A TEMUCO"},
+        "LH": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
     },
     "Loncoche": {
-        "Glucosa": {"tubo": "tubo amarillo gel 1", "proceso": "NO DEFINIDO"},
+        "Glucosa": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
         "GGT": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
-        "Troponina": {"tubo": "tubo amarillo gel 1", "proceso": "NO DEFINIDO"},
-        "Progesterona": {"tubo": "tubo amarillo gel 2", "proceso": "NO DEFINIDO"},
+        "Troponina": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
+        "Progesterona": {"tubo": "tubo amarillo gel 2", "proceso": "DERIVA A TEMUCO"},
         "LH": {"tubo": "tubo amarillo gel 3", "proceso": "DERIVA A VILLARRICA"},
     },
     "Temuco": {
-        "Glucosa": {"tubo": "tubo amarillo gel 1", "proceso": "NO DEFINIDO"},
-        "GGT": {"tubo": "tubo amarillo gel 1", "proceso": "NO DEFINIDO"},
-        "Troponina": {"tubo": "tubo amarillo gel 1", "proceso": "NO DEFINIDO"},
-        "Progesterona": {"tubo": "tubo amarillo gel 1", "proceso": "NO DEFINIDO"},
-        "LH": {"tubo": "tubo amarillo gel 1", "proceso": "NO DEFINIDO"},
+        "Glucosa": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
+        "GGT": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
+        "Troponina": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
+        "Progesterona": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
+        "LH": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
     },
 }
+
 
 examenes_sel = st.multiselect("Selecciona examen(es)", EXAMENES)
 hospital = st.selectbox("Selecciona hospital", HOSPITALES)
