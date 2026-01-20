@@ -13,29 +13,35 @@ st.caption("Define tubo y lugar de proceso según Hospital + Examen")
 st.divider()
 
 HOSPITALES = ["Villarrica", "Loncoche", "Temuco"]
-EXAMENES = ["Glucosa", "GGT", "Troponina", "Progesterona", "LH"]
+EXAMENES = [
+    "GLUCOSA SANGRE",
+    "GAMAGLUTAMIL TRANSFERASA (GGT) SANGRE",
+    "TROPONINA T SANGRE",
+    "PROGESTERONA SANGRE",
+    "HORMONA LUTEINIZANTE (LH) SANGRE",
+]
 
 RULES = {
     "Villarrica": {
-        "Glucosa": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
-        "GGT": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
-        "Troponina": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
-        "Progesterona": {"tubo": "tubo amarillo gel 2", "proceso": "DERIVA A TEMUCO"},
-        "LH": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
+        "GLUCOSA SANGRE": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
+        "GAMAGLUTAMIL TRANSFERASA (GGT) SANGRE": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
+        "TROPONINA T SANGRE": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
+        "PROGESTERONA SANGRE": {"tubo": "tubo amarillo gel 2", "proceso": "DERIVA A TEMUCO"},
+        "HORMONA LUTEINIZANTE (LH) SANGRE": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
     },
     "Loncoche": {
-        "Glucosa": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
-        "GGT": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
-        "Troponina": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
-        "Progesterona": {"tubo": "tubo amarillo gel 2", "proceso": "DERIVA A TEMUCO"},
-        "LH": {"tubo": "tubo amarillo gel 3", "proceso": "DERIVA A VILLARRICA"},
+        "GLUCOSA SANGRE": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
+        "GAMAGLUTAMIL TRANSFERASA (GGT) SANGRE": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
+        "TROPONINA T SANGRE": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
+        "PROGESTERONA SANGRE": {"tubo": "tubo amarillo gel 2", "proceso": "DERIVA A TEMUCO"},
+        "HORMONA LUTEINIZANTE (LH) SANGRE": {"tubo": "tubo amarillo gel 3", "proceso": "DERIVA A VILLARRICA"},
     },
     "Temuco": {
-        "Glucosa": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
-        "GGT": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
-        "Troponina": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
-        "Progesterona": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
-        "LH": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
+        "GLUCOSA SANGRE": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
+        "GAMAGLUTAMIL TRANSFERASA (GGT) SANGRE": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
+        "TROPONINA T SANGRE": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
+        "PROGESTERONA SANGRE": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
+        "HORMONA LUTEINIZANTE (LH) SANGRE": {"tubo": "tubo amarillo gel 1", "proceso": "PROCESA LOCAL"},
     },
 }
 
